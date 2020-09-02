@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="JavaScript/app.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/icon type" />
+    <title>Dev Taddy - Tomato Timer</title>
+  </head>
+  <body>
+    <audio src="audio/breakAudio.mp3" class="break-audio"></audio>
+    <audio src="audio/workAudio.mp3" class="work-audio"></audio>
+    <audio src="audio/congratsAudio.mp3" class="congrats-audio"></audio>
+    <main class="grid">
+      <h1>DEV TAD'S <span class="h1-grow"> TOMATO TIMER </span></h1>
+      <p>
+        <button class="decrement-tomato iD">-</button
+        ><span class="tomato-minutes"> 25</span>:<span class="tomato-seconds"
+          >00 </span
+        ><button class="increment-tomato iD">+</button>
+      </p>
+      <p class="title">SHORT BREAK</p>
+      <p>
+        <button class="decrement-shortBrk iD">-</button>
+        <span class="shortBrk-minutes"> 5</span>:<span class="shortBrk-seconds"
+          >00 </span
+        ><button class="increment-shortBrk iD">+</button>
+      </p>
+      <p class="title">LONG BREAK</p>
+      <p>
+        <button class="decrement-longBrk iD">-</button
+        ><span class="longBrk-minutes"> 10</span>:<span class="longBrk-seconds"
+          >00 </span
+        ><button class="increment-longBrk iD">+</button>
+      </p>
+      <p class="title">SESSION</p>
+      <p>
+        <button class="decrement-session iD">-</button
+        ><span id="session"> 4 </span>
+        <button class="increment-session iD">+</button>
+      </p>
+      <div class="customize-buttons">
+        <button class="start button-stlye">START</button>
+        <button class="stop button-stlye">STOP</button>
+        <button class="reset button-stlye">RESET</button>
+      </div>
+    </main>
+  </body>
+</html>

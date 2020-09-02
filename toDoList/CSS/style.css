@@ -1,0 +1,147 @@
+/*Font*/
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+/* Base and Reset */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 10px;
+  color: #bbe1fa;
+  background-image: url(../assets/BG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; /* Stops image repeating */
+  background-attachment: fixed; /* Fixes image to scroll with page rather than scrolling off the bottom */
+  background-position: center center; /* Centres image on page */
+  background-size: cover; /* Stretches image to fill page */
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* Custom */
+h2 {
+  grid-column: 1/13;
+  justify-self: center;
+  font-size: 1.75em;
+  color: black;
+  font-family: poppins;
+  font-weight: 200;
+  background: #ffffff;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+h1 {
+  grid-column: 1/13;
+  justify-self: center;
+  font-size: 3em;
+}
+.h1-grow {
+  color: #3282b8;
+  font-size: 1.5em;
+}
+.grid-15 {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-column: 1/13;
+}
+div input {
+  grid-column: 8/13;
+  background: #0f4c75;
+  color: #bbe1fa;
+  border: 0;
+  padding: 0.75em 0;
+  font-size: 1.5em;
+  text-align: center;
+  outline: none;
+}
+button {
+  background: #3282b8;
+  border: 0;
+  margin: 0.5em 0;
+  color: #1b262c;
+  font-family: poppins;
+  font-weight: 200;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+.add-button {
+  grid-column: 13/14;
+  margin: 0;
+}
+section {
+  grid-column: 1/13;
+  margin-top: 1em;
+}
+.done-btn,
+.undo-btn {
+  grid-column: 4/5;
+}
+.activities {
+  grid-column: 5/9;
+  background: #0f4c75;
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  padding: 0.75em 0;
+  text-align: center;
+}
+.activities-header {
+  grid-column: 6/8;
+  border-radius: 25%;
+  padding: 0.5em 0;
+}
+.activities-header {
+  grid-column: 6/8;
+  border-radius: 25%;
+  padding: 0.5em 0;
+}
+.remove-btn {
+  grid-column: 9/10;
+}
+.lazy,
+.not-lazy {
+  grid-column: 6/8;
+}
+.done {
+  text-decoration: line-through;
+  color: rgb(187, 225, 250, 50%);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: initial;
+}
+/* Media Queries */
+@media (max-width: 750px) {
+  div input,
+  p {
+    text-align: left;
+    padding-left: 0.75em;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 8px;
+  }
+  div input {
+    padding-left: 0.4em;
+  }
+}
+@media (max-width: 430px) {
+  body {
+    font-size: 6.32px;
+  }
+}

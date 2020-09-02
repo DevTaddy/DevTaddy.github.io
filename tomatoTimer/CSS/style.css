@@ -1,0 +1,107 @@
+/*Font*/
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+/* Base and Reset */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 10px;
+  color: #ffdbc5;
+  background-image: url(../images/BG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; /* Stops image repeating */
+  background-attachment: fixed; /* Fixes image to scroll with page rather than scrolling off the bottom */
+  background-position: center center; /* Centres image on page */
+  background-size: cover; /* Stretches image to fill page */
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* Custom */
+h1 {
+  grid-column: 1/13;
+  justify-self: center;
+  font-size: 3.3em;
+  font-weight: 200;
+}
+
+.h1-grow {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #cf1b1b;
+}
+
+p {
+  grid-column: 1/13;
+  justify-self: center;
+  font-size: 1.75em;
+}
+p:first-of-type {
+  font-size: 3em;
+}
+
+.title {
+  font-weight: 200;
+}
+.iD {
+  background: none;
+  font-size: 1em;
+  font-weight: 300;
+  color: #ffdbc5;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+.iD:active {
+  color: #423144;
+}
+div {
+  grid-column: 1/13;
+  justify-self: center;
+}
+.button-stlye {
+  background: #cf1b1b;
+  font-size: 1.75em;
+  border: 0;
+  cursor: pointer;
+  margin: 0 1em;
+  padding: 0.5em;
+  color: #ffdbc5;
+  border-radius: 15%;
+  outline: none;
+  font-family: poppins;
+  font-weight: 200;
+}
+button:active {
+  color: #423144;
+}
+/* Media Queries */
+@media (max-width: 507px) {
+  h1 {
+    margin-top: 3em;
+    font-size: 2.1em;
+  }
+  p:first-of-type {
+    font-size: 2.25em;
+  }
+}
