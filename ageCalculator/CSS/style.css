@@ -1,0 +1,143 @@
+/*Font*/
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+/* Base and Reset */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 10px;
+  color: #000000;
+  background-image: url(../images/BG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; /* Stops image repeating */
+  background-attachment: fixed; /* Fixes image to scroll with page rather than scrolling off the bottom */
+  background-position: center center; /* Centres image on page */
+  background-size: cover; /* Stretches image to fill page */
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* Custom */
+h1 {
+  font-size: 2.75em;
+  grid-column: 1/13;
+  justify-self: center;
+  font-weight: 200;
+  color: #ffffff;
+}
+.h1-grow {
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #cff1ef;
+}
+.age-calculator {
+  background: #ffffff;
+  grid-column: 1/13;
+  justify-self: center;
+  width: 30%;
+  border-radius: 1.5em;
+}
+.input-container {
+  grid-column: 1/13;
+  margin-top: 1em;
+}
+.date {
+  font-size: 1.5em;
+  margin-top: 0.35em;
+  grid-column: 1/13;
+  text-align: center;
+  background: #fbcffc;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 0.5em 0;
+}
+.results {
+  font-size: 1.5em;
+  grid-column: 1/13;
+  background: #fbcffc;
+  margin: 1.5em;
+  padding-left: 0.5em;
+  border-radius: 1em;
+  font-weight: 200;
+}
+.result {
+  color: rgba(0, 0, 0, 50%);
+}
+.submit {
+  grid-column: 1/13;
+  justify-self: center;
+  margin: 2em 0;
+  border: 0;
+  outline: 0;
+  background: #cff1ef;
+  padding: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-family: poppins;
+  border-radius: 0.25em;
+}
+button:active {
+  color: #cff1ef;
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 10px;
+  }
+  .age-calculator {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+  .age-calculator {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  body {
+    font-size: 10px;
+  }
+  .age-calculator {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  body {
+    font-size: 10px;
+  }
+  .age-calculator {
+    width: 70%;
+  }
+}
